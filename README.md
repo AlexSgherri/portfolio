@@ -1,1 +1,1 @@
-My personal Portfolio developed in React.js
+My personal Portfolio developed in React
