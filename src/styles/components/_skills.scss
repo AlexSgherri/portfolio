@@ -1,0 +1,6 @@
+@use "../assets/variables" as c;
+
+#skills{
+    height: calc(100vh - c.$nav-height);;
+    background-color: blue;
+}

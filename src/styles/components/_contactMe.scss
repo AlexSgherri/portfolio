@@ -1,0 +1,71 @@
+@use "../assets/variables" as c;
+
+#contact {
+  height: calc(100vh - c.$nav-height - c.$footer-height);
+  background-color: c.$very-dark-blue;
+
+  h1 {
+    color: c.$light-white;
+  }
+
+  h1:after {
+    background-color: c.$light-white;
+  }
+
+  p {
+    color: c.$dark-blue;
+    padding-bottom: 2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    gap: 0.15rem;
+
+    & > *:not(:last-child) {
+      padding: 0.25rem;
+      background-color: c.$light-black;
+      border: none;
+      color: c.$light-white;
+    }
+
+    & > *:not(button):focus {
+      outline: none;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .btn {
+      align-self: flex-end;
+      color: c.$light-white;
+      border-color: c.$light-white;
+      margin-right: 0;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      border-color: c.$dark-blue;
+    }
+
+  }
+
+  .green-message{
+    color: green;
+  }
+
+  .red-message{
+    color: red;
+  }
+}
+
+@media screen and(max-width:600px) {
+  #contact{
+    .contact-form{
+      width: 90%;
+    }
+  }
+  
+}

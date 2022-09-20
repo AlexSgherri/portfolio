@@ -1,0 +1,12 @@
+@use "../assets/variables" as c;
+
+#widget{
+    height: calc(100vh - c.$nav-height);
+    // background-color: c.$light-white;
+    background-color: purple;
+
+    img{
+        width: 100%;
+        height: 50px;
+    }
+}

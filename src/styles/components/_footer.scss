@@ -1,0 +1,36 @@
+@use "../assets/variables" as c;
+
+#footer{
+    height: c.$footer-height;
+    background-color: c.$light-black;
+    border-top: 1px solid c.$hover-brown;
+
+    .footer-links{
+        max-width: 9rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        a{
+            color: c.$light-white;
+            margin-bottom: .5rem;
+            transition: all .2s ease-in-out;
+        }
+
+        a:hover{
+            color: c.$dark-blue;
+        }
+    }
+
+    h5{
+        font-size: .82rem;
+        font-weight: 400;
+        color: c.$lighter-black;
+
+        .highlight{
+            font-size: .7rem;
+            font-weight: 200;
+            color: c.$hover-brown;
+        }
+    }
+}

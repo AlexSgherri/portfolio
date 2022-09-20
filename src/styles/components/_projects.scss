@@ -1,0 +1,11 @@
+@use "../assets/variables" as c;
+
+#projects{
+    height: calc(100vh - c.$nav-height);
+    background-color: c.$light-white;
+
+    img{
+        width: 100%;
+        height: 50px;
+    }
+}
